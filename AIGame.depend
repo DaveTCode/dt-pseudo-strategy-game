@@ -1,0 +1,80 @@
+# depslib dependency file v1.0
+1245426671 source:c:\documents and settings\david\my documents\aigame\dt_mem_alloc_handler.c
+	"dt_include.h"
+
+1245934864 c:\documents and settings\david\my documents\aigame\dt_include.h
+	<stdlib.h>
+	<windows.h>
+	<stdbool.h>
+	<sdl/sdl.h>
+	<sdl/sdl_image.h>
+	"dt_globals.h"
+	"dt_unit.h"
+	"dt_errors.h"
+	"dt_unit_list.h"
+	"dt_window_handler.h"
+	"dt_grid.h"
+	"dt_entity_graphic.h"
+	"dt_background_tile.h"
+	"dt_prototypes.h"
+	"dt_pathing.h"
+	"dt_macros.h"
+
+1246014943 c:\documents and settings\david\my documents\aigame\dt_unit.h
+
+1244579214 c:\documents and settings\david\my documents\aigame\dt_errors.h
+
+1244629046 c:\documents and settings\david\my documents\aigame\dt_unit_list.h
+
+1245402258 c:\documents and settings\david\my documents\aigame\dt_master_unit_list.h
+
+1245678498 source:c:\documents and settings\david\my documents\aigame\dt_unit.c
+	"dt_include.h"
+
+1245407482 source:c:\documents and settings\david\my documents\aigame\dt_unit_list.c
+	"dt_include.h"
+
+1245682604 source:c:\documents and settings\david\my documents\aigame\main.c
+	"dt_include.h"
+
+1245402568 source:c:\documents and settings\david\my documents\aigame\dt_master_unit_list.c
+	"dt_include.h"
+
+1245678831 c:\documents and settings\david\my documents\aigame\dt_prototypes.h
+
+1245678768 c:\documents and settings\david\my documents\aigame\dt_window_handler.h
+
+1245683825 source:c:\documents and settings\david\my documents\aigame\dt_window_handler.c
+	"dt_include.h"
+
+1245681669 source:c:\documents and settings\david\my documents\aigame\dt_input_handler.c
+	"dt_include.h"
+
+1245594704 c:\documents and settings\david\my documents\aigame\dt_grid.h
+
+1245681323 source:c:\documents and settings\david\my documents\aigame\dt_grid.c
+	"dt_include.h"
+
+1244838144 c:\documents and settings\david\my documents\aigame\dt_unit_graphic.h
+
+1245175776 source:c:\documents and settings\david\my documents\aigame\dt_unit_graphic.c
+	"dt_include.h"
+
+1245339635 c:\documents and settings\david\my documents\aigame\dt_entity_graphic.h
+
+1245427562 source:c:\documents and settings\david\my documents\aigame\dt_entity_graphic.c
+	"dt_include.h"
+
+1245427937 c:\documents and settings\david\my documents\aigame\dt_globals.h
+
+1245427957 source:c:\documents and settings\david\my documents\aigame\dt_globals.c
+
+1246012598 c:\documents and settings\david\my documents\aigame\dt_background_tile.h
+
+1246012569 source:c:\documents and settings\david\my documents\aigame\dt_background_tile.c
+	"dt_include.h"
+
+1245683614 c:\documents and settings\david\my documents\aigame\dt_macros.h
+
+1245934852 c:\documents and settings\david\my documents\aigame\dt_pathing.h
+

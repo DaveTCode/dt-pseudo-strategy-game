@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="AIGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="AIGame" prefix_auto="1" extension_auto="1" />
+				<Option external_deps="..\..\..\..\MinGW\lib\libSDL.dll.a;" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Linker>
+			<Add option="libsimclist.dll.a" />
+			<Add library="opengl32" />
+		</Linker>
+		<Unit filename="dt_background_tile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_background_tile.h" />
+		<Unit filename="dt_entity_graphic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_entity_graphic.h" />
+		<Unit filename="dt_errors.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_globals.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_globals.h" />
+		<Unit filename="dt_grid.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_grid.h" />
+		<Unit filename="dt_include.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_input_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_macros.h" />
+		<Unit filename="dt_mem_alloc_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_pathing.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_pathing.h" />
+		<Unit filename="dt_prototypes.h" />
+		<Unit filename="dt_unit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_unit.h">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_unit_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_unit_list.h" />
+		<Unit filename="dt_window_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_window_handler.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
