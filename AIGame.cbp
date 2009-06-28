@@ -14,13 +14,16 @@
 			</Target>
 		</Build>
 		<Linker>
-			<Add option="libsimclist.dll.a" />
 			<Add library="opengl32" />
 		</Linker>
 		<Unit filename="dt_background_tile.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="dt_background_tile.h" />
+		<Unit filename="dt_basic_list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_basic_list.h" />
 		<Unit filename="dt_entity_graphic.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -28,6 +31,10 @@
 		<Unit filename="dt_errors.h">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="dt_file_handler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="dt_file_handler.h" />
 		<Unit filename="dt_globals.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -57,10 +64,6 @@
 		<Unit filename="dt_unit.h">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="dt_unit_list.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="dt_unit_list.h" />
 		<Unit filename="dt_window_handler.c">
 			<Option compilerVar="CC" />
 		</Unit>

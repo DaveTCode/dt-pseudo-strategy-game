@@ -5,7 +5,7 @@ int main(int argc, char **argv)
   /****************************************************************************/
   /* Local Variables.                                                         */
   /****************************************************************************/
-  DT_UNIT_LIST_NS *active_unit_list;
+  DT_UNSORTED_LIST *active_unit_list;
   DT_GRID *map_grid;
   DT_SCREEN *screen;
   SDL_Event event;
@@ -30,12 +30,12 @@ int main(int argc, char **argv)
   /****************************************************************************/
   /* Set up the master unit list.                                             */
   /****************************************************************************/
-  master_unit_list = dt_create_unit_list_ns();
+  master_unit_list = dt_create_unsorted_list(dt_destroy_unit);
 
   /****************************************************************************/
   /* Set up the active unit list.                                             */
   /****************************************************************************/
-  active_unit_list = dt_create_unit_list_ns();
+  active_unit_list = dt_create_unsorted_list(dt_destroy_unit);
 
   /****************************************************************************/
   /* Initialise the window and check that it worked.                          */
@@ -110,8 +110,8 @@ int main(int argc, char **argv)
 EXIT_LABEL:
 
   SDL_Quit();
-  dt_destroy_unit_list(active_unit_list, false);
-  dt_destroy_unit_list(master_unit_list, true);
+  dt_destroy_unsorted_list(active_unit_list, false);
+  dt_destroy_unsorted_list(master_unit_list, true);
   dt_destroy_grid(map_grid);
 
   return(EXIT_SUCCESS);
@@ -141,7 +141,7 @@ void dt_graceful_exit(char *err_str)
 
   if (NULL != master_unit_list)
   {
-    dt_destroy_unit_list(master_unit_list, true);
+    dt_destroy_unsorted_list(master_unit_list, true);
   }
 
   exit(EXIT_FAILURE);

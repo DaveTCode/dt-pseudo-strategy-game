@@ -23,6 +23,19 @@ DT_SCREEN *dt_create_screen()
   /****************************************************************************/
   temp_screen = (DT_SCREEN *) dt_malloc(sizeof(DT_SCREEN));
 
+  /****************************************************************************/
+  /* Set up the viewport to be a null surface.                                */
+  /****************************************************************************/
+  temp_screen->viewport = NULL;
+
+  /****************************************************************************/
+  /* Set default parameter values.                                            */
+  /****************************************************************************/
+  temp_screen->pixel_start_x = 0;
+  temp_screen->pixel_start_y = 0;
+  temp_screen->start_x = 0;
+  temp_screen->start_y = 0;
+
   return(temp_screen);
 }
 
@@ -39,6 +52,14 @@ DT_SCREEN *dt_create_screen()
 /******************************************************************************/
 void dt_destroy_screen(DT_SCREEN *screen)
 {
+  /****************************************************************************/
+  /* If the screen has a viewport attached then free it.                      */
+  /****************************************************************************/
+  if (NULL != screen->viewport)
+  {
+    SDL_FreeSurface(screen->viewport);
+  }
+
   dt_free(screen);
 
   return;
