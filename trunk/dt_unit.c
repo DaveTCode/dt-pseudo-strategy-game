@@ -30,7 +30,7 @@ DT_UNIT *dt_create_unit(long *next_unit_id)
   /****************************************************************************/
   if (NULL == master_unit_list)
   {
-    master_unit_list = dt_create_unit_list_ns();
+    master_unit_list = dt_create_unsorted_list(dt_destroy_unit);
   }
 
   /****************************************************************************/
@@ -47,7 +47,7 @@ DT_UNIT *dt_create_unit(long *next_unit_id)
   /****************************************************************************/
   /* Add the new unit to the master unit list.                                */
   /****************************************************************************/
-  dt_add_to_list_ns(master_unit_list, temp_unit);
+  dt_add_object_to_unsorted_list(master_unit_list, (void *) temp_unit);
 
   /****************************************************************************/
   /* Create a new unit graphic object.                                        */

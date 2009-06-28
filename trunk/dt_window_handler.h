@@ -21,7 +21,9 @@
 /* bpp - The number of bits per pixel. Should be set to 32 under normal op.   */
 /* start_x - The grid x coordinate that will be the left hand side of the     */
 /*           screen.                                                          */
-/* start_y - The grid y coordinate that will be the bottom of the screen.     */
+/* start_y - The grid y coordinate that will be the top of the screen.        */
+/* pixel_start_x - The pixel coordinate that will be the left of the screen.  */
+/* pixel_start_y - The pixel coordinate that will be the top of the screen.   */
 /* x_tiles_per_screen - The number of tiles per screen in the x direction.    */
 /* y_tiles_per_screen - The number of tiles per screen in the y direction.    */
 /*    The previous two variables are calculated using a grid object.          */
@@ -34,6 +36,8 @@ typedef struct dt_screen
   int bpp;
   int start_x;
   int start_y;
+  int pixel_start_x;
+  int pixel_start_y;
   int x_tiles_per_screen;
   int y_tiles_per_screen;
 } DT_SCREEN;

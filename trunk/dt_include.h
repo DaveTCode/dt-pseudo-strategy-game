@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <windows.h>
 #include <stdbool.h>
+#include <stdio.h>
 #include <sdl/SDL.h>
 #include <sdl/SDL_image.h>
 //#include <sdl/sdl_opengl.h>
@@ -30,3 +31,5 @@
 #include "dt_prototypes.h"
 #include "dt_pathing.h"
 #include "dt_macros.h"
+#include "dt_basic_list.h"
+#include "dt_file_handler.h"
